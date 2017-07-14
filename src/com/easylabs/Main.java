@@ -127,8 +127,23 @@ public class Main {
         }
     }
 
-    public static void main(String[] args) {
+    private static void Example7() {
+        double num1 = 100;
+        double num2 = 200;
+
+        double sum = (num1 + num2) / 2;
+        double mul = num1 * num2 * 2;
+
+        if (num1 > num2) {
+            num2 = sum;
+            num1 = mul;
+        } else {
+            num2 = mul;
+            num1 = sum;
+        }
     }
 
-
+    public static void main(String[] args) {
+        Example7();
+    }
 }
